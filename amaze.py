@@ -26,14 +26,14 @@ def order_now(item_url, buyer_name, address1, address2, city, state, zip_code):
     time.sleep(8)
 
     signinelement = browser.find_element_by_xpath('//*[@id="ap_email"]')
-    signinelement.send_keys('deckobooks@gmail.com')
+    signinelement.send_keys('')
 
     cont = browser.find_element_by_xpath('//*[@id="continue"]')
     cont.click()
     time.sleep(3)
 
     passwordelement = browser.find_element_by_xpath('//*[@id="ap_password"]')
-    passwordelement.send_keys('veritasys')
+    passwordelement.send_keys('')
     time.sleep(3)
 
     login = browser.find_element_by_xpath('//*[@id="signInSubmit"]')
